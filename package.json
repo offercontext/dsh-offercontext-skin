@@ -1,0 +1,17 @@
+{
+  "name": "@offercontext/dsh-skin-reading",
+  "version": "0.1.8",
+  "description": "白绿阅读：Offer Context 奶白与墨绿浅色皮肤",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {".": "./lib/index.js", "./client": "./lib/client.js", "./skin.json": "./skin.json", "./package.json": "./package.json"},
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}, "client": {"inject": ["@deepseek-ai/dsh-client-ui-layout"], "platform": "web"}},
+  "files": ["lib", "assets", "skin.json", "cordis.patch.yml", "README.md", "docs/previews"],
+  "scripts": {"build": "node build.mjs", "test": "node --test test/*.test.mjs"},
+  "repository": {"type": "git", "url": "https://github.com/offercontext/dsh-offercontext-skin.git"},
+  "homepage": "https://github.com/offercontext/dsh-offercontext-skin#readme",
+  "bugs": {"url": "https://github.com/offercontext/dsh-offercontext-skin/issues"},
+  "author": "XiaoZheBrother <958117002@qq.com>",
+  "engines": {"node": ">=22"},
+  "license": "UNLICENSED"
+}

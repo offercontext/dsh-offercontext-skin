@@ -1,0 +1,3 @@
+- insert:
+    - id: ui-skin-offercontext-reading
+      name: '@offercontext/dsh-skin-reading'
