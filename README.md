@@ -4,19 +4,19 @@
 
 ## 预览
 
-### 对话界面
+以下为 Windows 桌面版实机截图。
 
-![白绿阅读皮肤：对话界面](docs/previews/conversation.png)
+### 浅色 · 白绿阅读
 
-### 新建会话
+![白绿阅读的新会话界面](assets/preview.png)
 
-![白绿阅读皮肤：新建会话](docs/previews/new-conversation.png)
+![白绿阅读的对话界面](docs/previews/conversation.png)
 
 ### 深色 · 月下藏书室
 
-月窗下的翻书插画、侧栏持书角色与烫金书封输入框随深色外观启用。下图为浏览器组件预览。
+![月下藏书室的新会话界面](assets/preview-night.png)
 
-![月下藏书室深色组件预览](assets/preview-night.png)
+![月下藏书室的对话界面](docs/previews/night-conversation.png)
 
 ## 安装
 
@@ -87,4 +87,4 @@ npm pack
 
 ## 素材
 
-阅读角色及装饰为本主题准备的图片；上方两张图是实际运行截图。`assets/preview.png` 为皮肤管理页预览。README 截图中的对话内容和模型配置仅用于展示，不是插件附带的服务或配置。
+阅读角色及装饰为本主题准备的图片；皮肤管理页按外观展示对应的新会话截图。README 截图中的对话内容和模型配置仅用于展示，不是插件附带的服务或配置。
