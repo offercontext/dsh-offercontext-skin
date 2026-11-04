@@ -8,13 +8,13 @@
 
 ### 浅色 · 白绿阅读
 
-![白绿阅读的新会话界面](assets/preview.png)
+![白绿阅读的新会话界面](docs/previews/light-home.png)
 
 ![白绿阅读的对话界面](docs/previews/conversation.png)
 
 ### 深色 · 月下藏书室
 
-![月下藏书室的新会话界面](assets/preview-night.png)
+![月下藏书室的新会话界面](docs/previews/night-home.png)
 
 ![月下藏书室的对话界面](docs/previews/night-conversation.png)
 
@@ -29,10 +29,10 @@
    @smalltailqwq/dsh-client-ui-skin-deep-whale-manager
    ```
 
-3. 在“包名或地址”中粘贴本仓库地址并安装：
+3. 在“包名或地址”中粘贴以下精简安装包地址并安装：
 
    ```text
-   https://github.com/offercontext/dsh-offercontext-skin
+   https://github.com/offercontext/dsh-offercontext-skin/releases/download/v0.2.1/offercontext-dsh-skin-reading-0.2.1.tgz
    ```
 
 4. 安装完成后退出并重新打开 Harness。
@@ -46,14 +46,14 @@
 
 ```sh
 dsh plugin --profile web add '@smalltailqwq/dsh-client-ui-skin-deep-whale-manager'
-dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-skin'
+dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-skin/releases/download/v0.2.1/offercontext-dsh-skin-reading-0.2.1.tgz'
 ```
 
 重新启动对应 Web profile，再到 **设置 → 皮肤管理** 选择 **白绿阅读**。已经安装皮肤管理器时可跳过第一条命令。Web 命令遵循 DSH 插件契约；本皮肤实机截图来自 Windows 桌面版。
 
 ### 更新与恢复
 
-- 更新：通过 Harness 插件管理器更新本插件，然后重启应用。
+- 更新：在插件管理器中安装新版 Release 的 .tgz 地址，然后重启应用。
 - 恢复：在皮肤管理里切回“官方默认”或原来的皮肤。
 - 使用其他皮肤时，通过皮肤管理器互斥切换，避免同时启用多套皮肤。
 - 深色外观使用暗夜 OC 娘的持书与翻书形象。选择跟随系统时，皮肤随 Harness 的实际外观切换。
@@ -67,7 +67,7 @@ dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-s
 - 图片随包提供，通过同源白名单路由读取，不依赖外部图床或字体服务。
 - 纯展示层：不改写对话内容、模型配置或权限设置。
 
-当前版本 **0.2.0**，适配并在 **Windows / DSH 0.2.1-rc.5** 上使用。皮肤使用部分该版本的组件选择器，其他 DSH 版本或 macOS/Linux 仍需验证；升级宿主后若出现布局偏差，请附截图和版本提交 Issue。
+当前版本 **0.2.1**，适配并在 **Windows / DSH 0.2.1-rc.5** 上使用。皮肤使用部分该版本的组件选择器，其他 DSH 版本或 macOS/Linux 仍需验证；升级宿主后若出现布局偏差，请附截图和版本提交 Issue。
 
 包名：`@offercontext/dsh-skin-reading`。可选皮肤管理界面由第三方 Deep Whale Manager 提供；本插件自带独立的 `skin.json`，不包含或修改它的代码与美术资源。
 

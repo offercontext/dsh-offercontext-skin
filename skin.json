@@ -10,6 +10,6 @@
   "dshCompatibility": "0.2.1rc5",
   "package": "@offercontext/dsh-skin-reading",
   "wiring": {"id": "ui-skin-offercontext-reading", "bundleWired": false},
-  "preview": {"light": "assets/preview.png", "dark": "assets/preview-night.png"},
+  "preview": {"light": "assets/preview.webp", "dark": "assets/preview-night.webp"},
   "order": 30
 }
