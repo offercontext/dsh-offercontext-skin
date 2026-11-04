@@ -250,3 +250,72 @@ body[data-oc-reading] .an3WzG_root {container:oc-reading-workspace / inline-size
 }
 @media(prefers-reduced-transparency:reduce) {body[data-oc-reading] .V4vHZW_column,body[data-oc-reading] .GRgSLq_card {background-color:light-dark(#fffdf8,#21252c);box-shadow:none}}
 @media(prefers-reduced-motion:reduce) {body[data-oc-reading] button {transition:none}}
+
+/* Moonlit library. The controls remain native; only their surfaces carry the binding motif. */
+body[data-oc-reading][data-ds-dark-theme] {
+  --oc-paper:#101419; --oc-ink:#eee5d7; --oc-gold:#99866b; --oc-line:#524b42;
+  --oc-green:#add6c2;
+  --oc-binding:asset(night-leather.webp);
+  --oc-corner:asset(night-corner.svg);
+}
+body[data-oc-reading][data-ds-dark-theme] [data-phase].an3WzG_root::before {
+  inset:0;mask-image:none;
+  background-image:linear-gradient(90deg,#101419af,#101419aa 44%,transparent 73%),var(--oc-reading-art);
+  background-size:100% 100%,cover;background-position:center,right top;
+}
+body[data-oc-reading][data-ds-dark-theme] .an3WzG_header {
+  background:linear-gradient(90deg,#111418fa,#111418da 64%,#11141877);
+  border-color:var(--oc-line);box-shadow:none;
+}
+body[data-oc-reading][data-ds-dark-theme] .mP3x-q_sidebarCol {
+  --oc-paper:#151719;background:var(--oc-paper);box-shadow:inset -1px 0 var(--oc-gold)
+}
+body[data-oc-reading][data-ds-dark-theme] .mP3x-q_sidebarCol::after {display:none}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [class*="_logoRow"] {background:none;box-shadow:none}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [data-oc-wide] [class*="_logoRow"] {
+  background:var(--oc-corner) left top/24px no-repeat,var(--oc-binding);
+  border:1px solid var(--oc-line);border-radius:3px;
+}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [class*="_logoRow"]::after {display:none}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [data-oc-wide] .wtg9ga_brand::before {
+  font:italic 600 32px/1 Georgia,serif;letter-spacing:2px;color:#ded5c9;transform:translateY(-50%);
+}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [data-oc-wide] .wtg9ga_brand::after {
+  background:none;color:#cfbfaa;font:italic 600 11px/1 Georgia,serif;letter-spacing:1px;
+}
+body[data-oc-reading][data-ds-dark-theme] [data-oc-reading-mascot] {
+  background:var(--oc-sidebar-art) center/contain no-repeat;
+  mask-image:linear-gradient(transparent,#000 5% 94%,transparent);
+}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [class*="_footArea"] {background:none}
+@media(min-height:701px) {
+  body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [data-oc-wide] [class*="_regionArea"] {
+    background-image:asset(night-books.webp);background-position:center bottom;
+  }
+}
+body[data-oc-reading][data-ds-dark-theme] [data-slot=sidebar] [data-oc-wide] [role=treeitem][aria-selected=true] {
+  background:#20372f;box-shadow:inset 4px 0 #78a891;border-radius:2px;
+}
+body[data-oc-reading][data-ds-dark-theme] .GRgSLq_card {
+  background:var(--oc-corner) left top/25px no-repeat,var(--oc-binding) repeat,#222326;
+  border:1px solid #95816a;border-radius:11px;box-shadow:inset 0 0 0 3px #141618,inset 0 0 0 4px #564b40;
+}
+body[data-oc-reading][data-ds-dark-theme] .GRgSLq_card::before {
+  inset:0 0 auto auto;width:25px;height:25px;transform:scaleX(-1);background:var(--oc-corner) center/contain;
+}
+body[data-oc-reading][data-ds-dark-theme] .GRgSLq_card:focus-within {border-color:#dec9a3}
+body[data-oc-reading][data-ds-dark-theme] .GRgSLq_row .GRgSLq_primary:not(:disabled) {background:#234b40;border-color:#8f9a83;color:#fff1d7}
+body[data-oc-reading][data-ds-dark-theme] .GRgSLq_row .GRgSLq_primary:hover:not(:disabled) {background:#356252}
+body[data-oc-reading][data-ds-dark-theme] .LOmM4q_bubble {background:#302f30;color:var(--oc-ink);border-color:#514b45}
+body[data-oc-reading][data-ds-dark-theme] .K5rwea_file {background:#262628;border-color:var(--oc-line)}
+body[data-oc-reading][data-ds-dark-theme] .an3WzG_composerSeat {background:linear-gradient(transparent,#101419bf)!important}
+@container oc-reading-workspace (min-width:850px) {
+  body[data-oc-reading][data-ds-dark-theme] .V4vHZW_column {
+    margin-left:clamp(22px,3cqw,56px);margin-right:auto;max-width:min(var(--dsh-chat-content-width,800px),55cqw);
+  }
+}
+@media(max-width:1000px),(prefers-reduced-transparency:reduce) {
+  body[data-oc-reading][data-ds-dark-theme] [data-phase].an3WzG_root::before {
+    background-image:linear-gradient(90deg,#101419ee,#101419cc),var(--oc-reading-art);
+  }
+}

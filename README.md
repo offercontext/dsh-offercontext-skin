@@ -12,6 +12,12 @@
 
 ![白绿阅读皮肤：新建会话](docs/previews/new-conversation.png)
 
+### 深色 · 月下藏书室
+
+月窗下的翻书插画、侧栏持书角色与烫金书封输入框随深色外观启用。下图为浏览器组件预览。
+
+![月下藏书室深色组件预览](assets/preview-night.png)
+
 ## 安装
 
 ### DeepSeek Harness 桌面版
