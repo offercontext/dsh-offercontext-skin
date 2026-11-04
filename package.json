@@ -1,7 +1,7 @@
 {
   "name": "@offercontext/dsh-skin-reading",
-  "version": "0.1.8",
-  "description": "白绿阅读：Offer Context 奶白与墨绿浅色皮肤",
+  "version": "0.2.0",
+  "description": "白绿阅读：Offer Context 日常与暗夜双主题皮肤",
   "type": "module",
   "main": "lib/index.js",
   "exports": {".": "./lib/index.js", "./client": "./lib/client.js", "./skin.json": "./skin.json", "./package.json": "./package.json"},

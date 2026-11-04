@@ -1,16 +1,22 @@
 # Offer Context · 白绿阅读
 
-为 **DeepSeek Harness** 制作的浅色阅读皮肤。奶白纸张、墨绿书签、OC 阅读角色与植物装饰，保留 Harness 的对话、工作区、工具和权限功能。
+为 **DeepSeek Harness** 制作的双主题阅读皮肤。奶白纸张、墨绿书签、OC 阅读角色与植物装饰，保留 Harness 的对话、工作区、工具和权限功能。
 
 ## 预览
 
-### 对话界面
+以下为 Windows 桌面版实机截图。
 
-![白绿阅读皮肤：对话界面](docs/previews/conversation.png)
+### 浅色 · 白绿阅读
 
-### 新建会话
+![白绿阅读的新会话界面](assets/preview.png)
 
-![白绿阅读皮肤：新建会话](docs/previews/new-conversation.png)
+![白绿阅读的对话界面](docs/previews/conversation.png)
+
+### 深色 · 月下藏书室
+
+![月下藏书室的新会话界面](assets/preview-night.png)
+
+![月下藏书室的对话界面](docs/previews/night-conversation.png)
 
 ## 安装
 
@@ -30,7 +36,7 @@
    ```
 
 4. 安装完成后退出并重新打开 Harness。
-5. 在 **设置 → 皮肤管理** 中选择 **白绿阅读**，将外观设为 **浅色**。
+5. 在 **设置 → 皮肤管理** 中选择 **白绿阅读**。切换 **设置 → 外观 → 浅色 / 深色** 即可更换角色和配色。
 
 仓库根目录就是插件包，已经包含编译好的 `lib/` 和图片资源。GitHub 安装不需要手动构建，也没有安装时执行的脚本。不要将本仓库 URL 当作 npm 包名；本插件目前通过 GitHub 分发。
 
@@ -50,7 +56,7 @@ dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-s
 - 更新：通过 Harness 插件管理器更新本插件，然后重启应用。
 - 恢复：在皮肤管理里切回“官方默认”或原来的皮肤。
 - 使用其他皮肤时，通过皮肤管理器互斥切换，避免同时启用多套皮肤。
-- 暂不提供独立深色主题；请使用浅色外观。
+- 深色外观使用暗夜 OC 娘的持书与翻书形象。选择跟随系统时，皮肤随 Harness 的实际外观切换。
 
 ## 功能与兼容性
 
@@ -61,7 +67,7 @@ dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-s
 - 图片随包提供，通过同源白名单路由读取，不依赖外部图床或字体服务。
 - 纯展示层：不改写对话内容、模型配置或权限设置。
 
-当前版本 **0.1.8**，适配并在 **Windows / DSH 0.2.1-rc.5** 上使用。皮肤使用部分该版本的组件选择器，其他 DSH 版本或 macOS/Linux 仍需验证；升级宿主后若出现布局偏差，请附截图和版本提交 Issue。
+当前版本 **0.2.0**，适配并在 **Windows / DSH 0.2.1-rc.5** 上使用。皮肤使用部分该版本的组件选择器，其他 DSH 版本或 macOS/Linux 仍需验证；升级宿主后若出现布局偏差，请附截图和版本提交 Issue。
 
 包名：`@offercontext/dsh-skin-reading`。可选皮肤管理界面由第三方 Deep Whale Manager 提供；本插件自带独立的 `skin.json`，不包含或修改它的代码与美术资源。
 
@@ -81,4 +87,4 @@ npm pack
 
 ## 素材
 
-阅读角色及装饰为本主题准备的图片；上方两张图是实际运行截图。`assets/preview.png` 为皮肤管理页预览。README 截图中的对话内容和模型配置仅用于展示，不是插件附带的服务或配置。
+阅读角色及装饰为本主题准备的图片；皮肤管理页按外观展示对应的新会话截图。README 截图中的对话内容和模型配置仅用于展示，不是插件附带的服务或配置。
