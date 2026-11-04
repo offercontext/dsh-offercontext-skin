@@ -3,13 +3,13 @@
   "name": "白绿阅读",
   "nameEn": "Offer Context · Reading",
   "author": "Offer Context",
-  "description": "奶白纸张、墨绿书签与安静阅读的陪伴。保留 Harness 原生布局和功能。",
+  "description": "浅色日常阅读，深色暗夜持书。保留 Harness 原生布局和功能。",
   "tagline": "在一页安静里，继续思考",
   "accent": "#287451",
   "bodyAttr": "data-oc-reading",
   "dshCompatibility": "0.2.1rc5",
   "package": "@offercontext/dsh-skin-reading",
   "wiring": {"id": "ui-skin-offercontext-reading", "bundleWired": false},
-  "preview": {"light": "assets/preview.png", "dark": "assets/preview.png"},
+  "preview": {"light": "assets/preview.png", "dark": "assets/preview-night.png"},
   "order": 30
 }
