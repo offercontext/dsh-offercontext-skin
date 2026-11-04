@@ -1,4 +1,4 @@
-# Offer Context · 白绿阅读
+# offerContext DSH皮肤
 
 为 **DeepSeek Harness** 制作的双主题阅读皮肤。奶白纸张、墨绿书签、OC 阅读角色与植物装饰，保留 Harness 的对话、工作区、工具和权限功能。
 
@@ -6,17 +6,17 @@
 
 以下为 Windows 桌面版实机截图。
 
-### 浅色 · 白绿阅读
+### 浅色 · 日常阅读
 
-![白绿阅读的新会话界面](docs/previews/light-home.png)
+![offerContext DSH皮肤的新会话界面](https://raw.githubusercontent.com/offercontext/dsh-offercontext-skin/e217ae5af705b36f3c96ca27ff8461e987d5eb71/light-home.png)
 
-![白绿阅读的对话界面](docs/previews/conversation.png)
+![offerContext DSH皮肤的对话界面](https://raw.githubusercontent.com/offercontext/dsh-offercontext-skin/e217ae5af705b36f3c96ca27ff8461e987d5eb71/conversation.png)
 
 ### 深色 · 月下藏书室
 
-![月下藏书室的新会话界面](docs/previews/night-home.png)
+![月下藏书室的新会话界面](https://raw.githubusercontent.com/offercontext/dsh-offercontext-skin/e217ae5af705b36f3c96ca27ff8461e987d5eb71/night-home.png)
 
-![月下藏书室的对话界面](docs/previews/night-conversation.png)
+![月下藏书室的对话界面](https://raw.githubusercontent.com/offercontext/dsh-offercontext-skin/e217ae5af705b36f3c96ca27ff8461e987d5eb71/night-conversation.png)
 
 ## 安装
 
@@ -32,11 +32,11 @@
 3. 在“包名或地址”中粘贴以下精简安装包地址并安装：
 
    ```text
-   https://github.com/offercontext/dsh-offercontext-skin/releases/download/v0.2.1/offercontext-dsh-skin-reading-0.2.1.tgz
+   https://github.com/offercontext/dsh-offercontext-skin/releases/download/v0.3.0/offercontext-dsh-skin-reading-0.3.0.tgz
    ```
 
 4. 安装完成后退出并重新打开 Harness。
-5. 在 **设置 → 皮肤管理** 中选择 **白绿阅读**。切换 **设置 → 外观 → 浅色 / 深色** 即可更换角色和配色。
+5. 在 **设置 → 皮肤管理** 中选择 **offerContext DSH皮肤**。切换 **设置 → 外观 → 浅色 / 深色** 即可更换角色和配色。
 
 仓库根目录就是插件包，已经包含编译好的 `lib/` 和图片资源。GitHub 安装不需要手动构建，也没有安装时执行的脚本。不要将本仓库 URL 当作 npm 包名；本插件目前通过 GitHub 分发。
 
@@ -46,10 +46,10 @@
 
 ```sh
 dsh plugin --profile web add '@smalltailqwq/dsh-client-ui-skin-deep-whale-manager'
-dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-skin/releases/download/v0.2.1/offercontext-dsh-skin-reading-0.2.1.tgz'
+dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-skin/releases/download/v0.3.0/offercontext-dsh-skin-reading-0.3.0.tgz'
 ```
 
-重新启动对应 Web profile，再到 **设置 → 皮肤管理** 选择 **白绿阅读**。已经安装皮肤管理器时可跳过第一条命令。Web 命令遵循 DSH 插件契约；本皮肤实机截图来自 Windows 桌面版。
+重新启动对应 Web profile，再到 **设置 → 皮肤管理** 选择 **offerContext DSH皮肤**。已经安装皮肤管理器时可跳过第一条命令。Web 命令遵循 DSH 插件契约；本皮肤实机截图来自 Windows 桌面版。
 
 ### 更新与恢复
 
@@ -60,6 +60,8 @@ dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-s
 
 ## 功能与兼容性
 
+- 在输入框点击当前模型，点模型名可更换模型，拖动滑条或按方向键可选择该模型支持的推理等级。
+
 - 统一侧栏、顶栏、输入框、按钮、菜单、代码块、文件卡片与轮次导航的颜色和边框。
 - OC 发夹的 Q 版阅读角色，以及右侧渐隐阅读插画。
 - 宽表格保持在正文区域内，必要时横向滚动。
@@ -67,7 +69,7 @@ dsh plugin --profile web add 'https://github.com/offercontext/dsh-offercontext-s
 - 图片随包提供，通过同源白名单路由读取，不依赖外部图床或字体服务。
 - 纯展示层：不改写对话内容、模型配置或权限设置。
 
-当前版本 **0.2.1**，适配并在 **Windows / DSH 0.2.1-rc.5** 上使用。皮肤使用部分该版本的组件选择器，其他 DSH 版本或 macOS/Linux 仍需验证；升级宿主后若出现布局偏差，请附截图和版本提交 Issue。
+当前版本 **0.3.0**，适配并在 **Windows / DSH 0.2.1-rc.5** 上使用。皮肤使用部分该版本的组件选择器，其他 DSH 版本或 macOS/Linux 仍需验证；升级宿主后若出现布局偏差，请附截图和版本提交 Issue。
 
 包名：`@offercontext/dsh-skin-reading`。可选皮肤管理界面由第三方 Deep Whale Manager 提供；本插件自带独立的 `skin.json`，不包含或修改它的代码与美术资源。
 

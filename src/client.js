@@ -10,7 +10,7 @@ window.__ModuleLoader__.load({
       style.textContent = /* THEME_CSS */ "";
       document.head.append(style);
       body.setAttribute('data-oc-reading', '');
-      // Only observe sidebar mounts. Never rewrite messages, icons, inputs or events.
+      const removeModelControls = mountModelControls();
       let art;
       let frame;
       let sidebar;
@@ -39,6 +39,7 @@ window.__ModuleLoader__.load({
       mount();
       observer.observe(body, {childList:true, subtree:true});
       ctx.effect(() => () => {
+        removeModelControls();
         observer.disconnect(); resize.disconnect();
         if (frame) cancelAnimationFrame(frame);
         art?.remove(); style.remove();
